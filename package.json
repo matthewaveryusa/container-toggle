@@ -1,0 +1,30 @@
+{
+  "name": "container-toggle",
+  "version": "0.0.1",
+  "description": "toggle a container to start/stop via http requests",
+  "main": "./src/toggle.js",
+  "scripts": {
+    "pretest": "rm -rf coverage",
+    "test": "istanbul cover _mocha -- --recursive -R spec",
+    "posttest": "istanbul check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewaveryusa/container-toggle.git"
+  },
+  "author": "Matthew Avery & Zenon Parker",
+  "license": "Private, Totem Labs LLC all rights reserved.",
+  "bugs": {
+    "url": "https://github.com/matthewaveryusa/container-toggle/issues"
+  },
+  "homepage": "https://github.com/matthewaveryusa/container-toggle",
+  "dependencies" : {
+    "totem-service":"*",
+    "docker.io":"*",
+    "commander":"*"
+  },
+  "devDependencies": {
+    "should":"*",
+    "sinon":"*"
+  }
+}
