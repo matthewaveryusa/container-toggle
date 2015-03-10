@@ -1,8 +1,9 @@
 {
   "name": "container-toggle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "toggle a container to start/stop via http requests",
   "main": "./src/toggle.js",
+  "bin" : { "container-toggle" : "./src/toggle.js" },
   "scripts": {
     "pretest": "rm -rf coverage",
     "test": "istanbul cover _mocha -- --recursive -R spec",

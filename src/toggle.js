@@ -39,6 +39,23 @@ Api.prototype.setupRoutes = function(app) {
         res.status(200).end();
       });
   });
+  app.get('/pause', function(req, res) { 
+    docker.containers.pause(self.options.container, {}, function(err,data){
+      if(err) {
+        res.status(500).end();
+      } else 
+        res.status(200).end();
+      });
+  });
+  
+  app.get('/unpause', function(req, res) {
+    docker.containers.unpause(self.options.container, {}, function(err,data){
+      if(err) {
+        res.status(500).end();
+      } else 
+        res.status(200).end();
+      });
+  });
 };
 api = new Api({'port':commander.port, 'host':commander.host, 'container':commander.container});
 api.connect();
