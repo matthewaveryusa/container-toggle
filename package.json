@@ -1,6 +1,6 @@
 {
   "name": "container-toggle",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "toggle a container to start/stop via http requests",
   "main": "./src/toggle.js",
   "bin" : { "container-toggle" : "./src/toggle.js" },
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/matthewaveryusa/container-toggle",
   "dependencies" : {
     "totem-service":"*",
-    "docker.io":"*",
+    "dockerode":"*",
     "commander":"*"
   },
   "devDependencies": {
