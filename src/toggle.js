@@ -1,4 +1,4 @@
-#! /usr/local/bin/iojs
+#! /usr/local/bin/iojs --harmony-classes
 'use strict';
 
 const Service = require('totem-service').Service,
